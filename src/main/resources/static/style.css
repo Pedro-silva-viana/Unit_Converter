@@ -1,0 +1,43 @@
+body{
+    background-color: aliceblue;
+    font-family: "Comic Neue", "Comic Sans MS", "Marker Felt", "Bradley Hand", cursive;
+    padding: 50px;
+    margin: 0;
+}
+
+.converter-tabs{
+    display: flex;
+    gap: 35px;
+}
+
+.tab-item{
+    background-color: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    padding-bottom: 5px;
+    outline: none;
+}
+
+.tab-item.active{
+    color: aqua;
+}
+
+.tab-item:not(:active):hover{
+    color: gray;
+}
+
+.but-reset{
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    background-color: transparent;
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+}
+

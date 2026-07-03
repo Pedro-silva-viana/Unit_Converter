@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit converter</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Unit converter</h1>
+        <div class="converter-tabs">
+            <a href="/length" class="tab-item">Length</a>
+            <a href="/temperature" class="tab-item active">Temperature</a>
+            <a href="/weight" class="tab-item">Weight</a>
+        </div>
+        <p> Enter length to convert</p>
+        <form action="/questionT" method="GET">
+            <input type="number" name="inputValue">
+
+            <select name="fromUnit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <select name="toUnit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <button type="submit">Convert</button>
+        </form>
+    </body>
+</html>

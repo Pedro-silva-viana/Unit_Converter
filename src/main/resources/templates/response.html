@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit converter</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Unit converter</h1>
+        <div class="converter-tabs">
+            <a href="/length" class="tab-item {{activeLength}}">Length</a>
+            <a href="/temperature" class="tab-item {{activeTemperature}}">Temperature</a>
+            <a href="/weight" class="tab-item {{activeWeight}}">Weight</a>
+        </div>
+        <p> Result of your calculation </p>
+        <h1>{{question}} = {{response}}</h1>
+        <a href="/{{currentTab}}" class="but-reset">Reset</a>
+    </body>
+</html>

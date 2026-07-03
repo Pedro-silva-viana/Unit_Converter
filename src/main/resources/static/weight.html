@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit converter</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Unit converter</h1>
+        <div class="converter-tabs">
+            <a href="/length" class="tab-item">Length</a>
+            <a href="/temperature" class="tab-item">Temperature</a>
+            <a href="/weight" class="tab-item active">Weight</a>
+        </div>
+        <p> Enter length to convert</p>
+        <form action="/questionW" method="GET">
+            <input type="number" name="inputValue">
+
+            <select name="fromUnit">
+                <option value="mg">milligram</option>
+                <option value="g">gram</option>
+                <option value="kg">kilogram</option>
+                <option value="oz">ounce</option>
+                <option value="lbs">pound</option>
+            </select>
+
+            <select name="toUnit">
+                <option value="mg">milligram</option>
+                <option value="g">gram</option>
+                <option value="kg">kilogram</option>
+                <option value="oz">ounce</option>
+                <option value="lbs">pound</option>
+            </select>
+
+            <button type="submit">Convert</button>
+        </form>
+    </body>
+</html>
