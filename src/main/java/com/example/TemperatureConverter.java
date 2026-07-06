@@ -1,7 +1,7 @@
 package com.example;
 
 public class TemperatureConverter{
-    public double convertCel(double amount, String mode){
+    private static double convertCel(double amount, String mode){
         switch (mode) {
             case "C":
                 break;
@@ -10,23 +10,31 @@ public class TemperatureConverter{
                 break;
             case "K":
                 amount = amount - 273.15;
+                break;
             default:
                 break;
         }
         return amount;
     }
-    public double celToOthers(double amont, String mode){
+    private static double celToOthers(double amount, String mode){
         switch (mode) {
             case "C":
                 break;
             case "F":
-                amont = (amont * 1.8) + 32;
+                amount = (amount * 1.8) + 32;
                 break;
             case "K":
-                amont = amont + 273.15;
+                amount = amount + 273.15;
+                break;
             default:
                 break;
         }
-        return amont;
+        return amount;
+    }
+
+    public static double temperatureConvert(double amount, String fromUnit, String toUnit){
+        amount = convertCel(amount, fromUnit);
+        amount = celToOthers(amount, toUnit);
+        return amount;
     }
 }

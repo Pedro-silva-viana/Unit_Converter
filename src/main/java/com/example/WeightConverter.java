@@ -2,7 +2,7 @@ package com.example;
 
 public class WeightConverter {
 
-    public double convertKil(double amount, String mode){
+    private static double convertKil(double amount, String mode){
         switch (mode) {
             case "mg":
                 amount = amount / (1000000);
@@ -13,10 +13,10 @@ public class WeightConverter {
             case "kg":
                 break;
             case "oz":
-                amount = amount / (35.274);
+                amount = amount * (0.028349523125);
                 break;
             case "lbs":
-                amount = amount / (2.205);
+                amount = amount * (0.45359237);
                 break;
             default:
                 break;
@@ -24,7 +24,7 @@ public class WeightConverter {
         return amount;
     }
 
-    public double KilToOthers(double amount, String mode){
+    private static double kilToOthers(double amount, String mode){
         switch (mode) {
             case "mg":
                 amount = amount * (1000000);
@@ -35,10 +35,10 @@ public class WeightConverter {
             case "kg":
                 break;
             case "oz":
-                amount = amount * (35.274);
+                amount = amount / (0.028349523125);
                 break;
             case "lbs":
-                amount = amount * (2.205);
+                amount = amount / (0.45359237);
                 break;
             default:
                 break;
@@ -46,4 +46,9 @@ public class WeightConverter {
         return amount;
     }
 
+    public static double weightConvert(double amount, String fromUnit, String toUnit){
+        amount = convertKil(amount, fromUnit);
+        amount = kilToOthers(amount, toUnit);
+        return amount;
+    }
 }
