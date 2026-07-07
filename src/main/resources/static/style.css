@@ -30,7 +30,7 @@ body{
     color: gray;
 }
 
-.but-reset{
+.but{
     text-decoration: none;
     color: black;
     font-family: inherit;
@@ -39,5 +39,9 @@ body{
     border-color: black;
     border-style: solid;
     border-width: 3px;
+}
+
+.but:hover{
+    background-color: gray;
 }
 

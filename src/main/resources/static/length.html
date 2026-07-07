@@ -14,7 +14,7 @@
         </div>
         <p> Enter length to convert</p>
         <form action="/questionL" method="GET">
-            <input type="number" name="inputValue">
+            <input type="number" name="inputValue" step="any" required>
 
             <select name="fromUnit">
                 <option value="mm">Millimeter</option>
@@ -38,7 +38,7 @@
                 <option value="mi">Mile</option>
             </select>
 
-            <button type="submit">Convert</button>
+            <button type="submit" class="but">Convert</button>
         </form>
     </body>
 </html>

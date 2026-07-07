@@ -14,7 +14,7 @@
         </div>
         <p> Enter length to convert</p>
         <form action="/questionW" method="GET">
-            <input type="number" name="inputValue">
+            <input type="number" name="inputValue" step="any" required>
 
             <select name="fromUnit">
                 <option value="mg">milligram</option>
@@ -32,7 +32,7 @@
                 <option value="lbs">pound</option>
             </select>
 
-            <button type="submit">Convert</button>
+            <button type="submit" class="but">Convert</button>
         </form>
     </body>
 </html>
