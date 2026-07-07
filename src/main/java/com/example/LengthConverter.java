@@ -16,13 +16,13 @@ public class LengthConverter {
                 amount = amount * (1000);
                 break;
             case "in":
-                amount = amount / (0.0254);
+                amount = amount * (0.0254);
                 break;
             case "ft":
                 amount = amount * (0.3048);
                 break;
             case "yd":
-                amount = amount / (0.9144);
+                amount = amount * (0.9144);
                 break;
             case "mi":
                 amount = amount * (1609.344);
@@ -41,7 +41,7 @@ public class LengthConverter {
             case "cm":
                 amount = amount * (100);
                 break;
-            case "me":
+            case "m":
                 break;
             case "km":
                 amount = amount / (1000);
@@ -53,7 +53,7 @@ public class LengthConverter {
                 amount = amount / (0.3048);
                 break;
             case "yd":
-                amount = amount * (0.9144);
+                amount = amount / (0.9144);
                 break;
             case "mi":
                 amount = amount / (1609.344);

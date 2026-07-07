@@ -6,7 +6,7 @@ public class TemperatureConverter{
             case "C":
                 break;
             case "F":
-                amount = (amount - 32) * (5/9);
+                amount = (amount - 32) * (5.0/9.0);
                 break;
             case "K":
                 amount = amount - 273.15;
