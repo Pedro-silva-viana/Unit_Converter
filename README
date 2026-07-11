@@ -1,5 +1,34 @@
-# Unit Converter
+# 📏 Unit Converter
 
-Web-based unit converter (Temperature, Length, and Weight) developed in Java.
+A web-based unit converter for temperature, weight, and length, built purely with Java. This project was developed as a solution to a challenge proposed by [roadmap.sh](https://roadmap.sh).
 
-This project is a solution to the "Unit Converter" challenge from roadmap.sh.
+## 🛠️ Technologies Used
+
+* **Core:** Java, HTML, CSS
+* **Web Server:** Native Java `HttpServer` (No external frameworks)
+* **Build Tool:** Maven
+* **Testing:** JUnit 4, Mockito
+* **Environment:** dotenv-java
+
+## 🚀 How to Run
+
+### Prerequisites
+Make sure you have the following tools installed on your machine:
+* **Java JDK** (version 17 or higher)
+* **Maven**
+
+### Running the Application
+1. Clone this repository to your local machine.
+2. Open your terminal and navigate into the project folder.
+3. Run the following Maven commands to build the project and start the server:
+
+```bash
+mvn clean package
+mvn compile exec:java "-Dexec.mainClass=com.example.App"
+```
+## 🧪 Testing
+
+This project is fully covered by unit tests using **JUnit 4** and **Mockito**. Because Maven handles all dependencies automatically, you can run the entire test suite with a single command:
+
+```bash
+mvn test
